@@ -1,0 +1,271 @@
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+} 
+
+body {
+    width:1000px;
+    margin:0 auto;
+    height:1000px;
+}
+
+header {
+    width:1000px;
+    height:105px;
+    margin:0 auto;
+    position: relative;
+    
+}
+
+ #main {
+     margin:0 auto;
+}
+
+ #main > a > img {
+     width:300px;
+     height:120px;
+}
+
+ #menu {
+     width: 600px;
+     margin-left:20px;
+     float: left;
+/*     margin:0 auto;*/
+     height:82px;
+/*     background:yellow;*/
+}
+
+ #menu > ul {
+     width: 600px;
+     margin: 0;
+     margin:0 auto;
+     text-align:center;
+     height:20px;
+     margin-bottom:60px;
+}
+
+ #menu > ul > li {
+     float: left;
+     width: 20%;
+     font-family: 'Jua', sans-serif;
+     
+}
+
+ #menu > ul > ul {
+     width: 100px;
+     height: 0px;
+     overflow: hidden;
+     position:absolute;
+     transition: height 300ms;
+     margin-top:25px;
+     text-align: center;
+     font-family: 'Jua', sans-serif;
+     box-sizing: border-box;
+     
+}
+
+#menu > ul > li:hover {
+    letter-spacing:5px;
+    transition: all 400ms;
+}
+
+ #menu > ul > ul:nth-of-type(1){
+     left:27px;
+     
+}
+ #menu > ul > ul:nth-of-type(2){
+     left:146px;
+}
+ #menu > ul > ul:nth-of-type(3){
+     left:268px;
+}
+ #menu > ul > ul:nth-of-type(4){
+     left:388px;
+}
+#menu > ul > ul:nth-of-type(5){
+     left:506px;
+}
+ #menu > ul > li:hover+ul, #menu > ul > ul:hover{
+     height: 70px;
+}
+#sss{
+    width: 380px;
+    height: 82px;
+/*    background:gray;*/
+    float: right;
+}
+#middle_st{
+    width:650px;
+    margin-right:50px;
+/*    background:red; */
+    float:left;
+    height:300px;
+    margin-top:20px;   
+}
+
+#middle_st > #item {
+    width: 25%;
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0;
+    float: left;
+}
+
+#middle_st > #item > a > p {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 300ms;
+    font-size: 18px;
+    width: 150px;
+    color: black;
+    font-family: 'Gamja Flower', cursive;
+}
+
+#middle_st > #item > a > img {
+    transition: opacity 300ms;
+}
+
+#middle_st > #item > a:hover > img {
+    opacity: 0.5;
+    transition: opacity 300ms;
+}
+
+#middle_st > #item > a:hover > p {
+    opacity: 1;
+    transition: opacity 300ms;
+    color: white;
+}
+
+#middle_st > p {
+    margin-left:15px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size:30px;
+}
+#middle_nd{
+/*    border:1px solid black;*/
+    width:296px;
+/*    background:blue;*/
+    float:left;
+    height:88px;
+    margin-top:px;
+    margin-bottom:35px;
+    font-family: 'Jua', sans-serif;
+}
+#middle_nd > p {
+    text-align:right;
+    font-size:20px;
+}
+
+#middle_nd > span > #information {
+    float:left;
+    font-size:15px;
+}
+#middle_nd > span > #point {
+    float:right;
+    font-size:15px;
+}
+#middle_th{
+    width:300px;
+/*    background:pink;*/
+    float:left;
+    height:200px;
+}
+#middle_th > h4 {
+    font-family: 'Do Hyeon', sans-serif;
+    margin:5px;
+}
+
+#middle_b{
+    width:1000px;
+/*    background:skyblue;*/
+    height:430px;
+    margin-top:420px;
+    overflow:hidden;
+    }
+
+#middle_b > p {
+    margin-left:15px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size:30px;
+}
+
+   
+    #main_section > article.main_article{
+        margin-bottom:10px; 
+        padding:20px; 
+        border:1px solid gray;}
+#
+    input:nth-of-type(1) {display: none;}
+    input:nth-of-type(1) ~ div:nth-of-type(1) {display: none;}
+    input:nth-of-type(1):checked ~ div:nth-of-type(1) {display: block;}
+    input:nth-of-type(2) {display: none;}
+    input:nth-of-type(2) ~ div:nth-of-type(2) {display: none;}
+    input:nth-of-type(2):checked ~ div:nth-of-type(2) {display: block;}
+    input:nth-of-type(3) {display: none;}
+    input:nth-of-type(3) ~ div:nth-of-type(3) {display: none;}
+    input:nth-of-type(3):checked ~ div:nth-of-type(3) {display: block;}
+    section.button{overflow: hidden;}
+    section.buttons > #st{
+        display: block; 
+        float:left; 
+        width:15px;
+        height: 15px; 
+        line-height: 30px; 
+        text-align: center; 
+        box-sizing: border-box; 
+        border: 1px solid black; 
+        color: white;
+        margin-left:450px;
+        border-radius:30px;
+}
+ section.buttons > #nd{
+        display: block; 
+        float:left; 
+        width:15px;
+        height: 15px; 
+        line-height: 30px; 
+        text-align: center; 
+        box-sizing: border-box; 
+        border: 1px solid black;
+        color: white;
+        margin-left:20px;
+        border-radius:30px;
+        
+}
+section.buttons > #rd{
+        display: block; 
+        float:left; 
+        width:15px;
+        height: 15px; 
+        line-height: 30px; 
+        text-align: center; 
+        box-sizing: border-box; 
+        border: 1px solid black;
+        color: white;
+        margin-left:20px;
+        border-radius:30px;
+}
+    input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1)
+      {background: black; color: white;}
+    input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2)
+      {background: black; color: white;}
+    input:nth-of-type(3):checked ~ section.buttons > label:nth-of-type(3)
+      {background: black; color: white;}
+.tab_item{
+    margin-left:45px; margin-top:25px; 
+}
+#bottom{
+    width:px;
+    height:100px;
+    margin:20px;
+    text-align: left;
+   
+}
+

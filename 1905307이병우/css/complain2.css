@@ -1,0 +1,239 @@
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+} 
+
+body {
+    width:1000px;
+    margin:0 auto;
+    height:1000px;
+}
+
+header {
+    width:1000px;
+    height:105px;
+    margin:0 auto;
+    position: relative;
+    
+}
+
+ #main {
+     margin:0 auto;
+}
+
+ #main > a > img {
+     width:300px;
+     height:120px;
+}
+
+ #menu {
+     width: 600px;
+     margin-left:20px;
+     float: left;
+/*     margin:0 auto;*/
+     height:82px;
+/*     background:yellow;*/
+}
+
+ #menu > ul {
+     width: 600px;
+     margin: 0;
+     margin:0 auto;
+     text-align:center;
+     height:20px;
+     margin-bottom:60px;
+}
+
+ #menu > ul > li {
+     float: left;
+     width: 20%;
+     font-family: 'Jua', sans-serif;
+     
+}
+
+ #menu > ul > ul {
+     width: 100px;
+     height: 0px;
+     overflow: hidden;
+     position:absolute;
+     transition: height 300ms;
+     margin-top:25px;
+     text-align: center;
+     font-family: 'Jua', sans-serif;
+     box-sizing: border-box;
+     
+}
+
+#menu > ul > li:hover {
+    letter-spacing:5px;
+    transition: all 400ms;
+}
+
+ #menu > ul > ul:nth-of-type(1){
+     left:27px;
+     
+}
+ #menu > ul > ul:nth-of-type(2){
+     left:146px;
+}
+ #menu > ul > ul:nth-of-type(3){
+     left:268px;
+}
+ #menu > ul > ul:nth-of-type(4){
+     left:388px;
+}
+#menu > ul > ul:nth-of-type(5){
+     left:506px;
+}
+ #menu > ul > li:hover+ul, #menu > ul > ul:hover{
+     height: 70px;
+}
+#sss{
+    width: 380px;
+    height: 82px;
+/*    background:gray;*/
+    float: right;
+}
+#middle {
+    width:1000px;
+    height:795px;
+}
+#middle > #middle_st  {
+    width:148px;
+    height:795px;
+    float:left;
+/*    background-color:gray;*/
+    font-family: 'Cute Font', cursive;
+}
+#middle_st > ul > #week {
+/*    border:1px solid cadetblue;*/
+    width:148px;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+/*    background-color:cadetblue;*/
+    color: white;
+    border-radius:15px;  
+}
+#middle_st > ul > #week > a{
+    color:dodgerblue;
+    font-family: 'Cute Font', cursive;
+    font-size: 30px;
+    
+}
+#middle_st > ul > li {
+    width:148px;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+    font-family: "돋움"
+   
+}
+#middle_st > ul > li:hover {
+/*
+    letter-spacing:5px;
+    transition: all 400ms;
+*/
+    text-decoration-line:underline;
+    font-weight: bold;
+}
+#middle_nd_left {
+/*    background-color: aqua;*/
+    width:250px;
+    border-bottom: 1px solid black;
+    height: 700px;
+    font-family: 'Poor Story', cursive;
+    float: left;
+}
+#middle_nd_left > #p_1,#p_2,#p_4,#p_5,#p_6 {
+    background-color:beige;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid black;
+    
+}
+#middle_nd_left > #p_3 {
+    background-color: beige; 
+    height: 345px;
+    line-height: 345px;
+    
+    border-bottom: 1px solid black;
+}
+
+#middle_nd_right {
+/*    background-color: red;*/
+    width:602px;
+    border-bottom: 1px solid black;
+    height: 700px;
+    float: left;
+    
+}
+#middle_nd_right > #text_1,#text_2,#text_4,#text_5,#text_6 {
+    height: 70px;
+/*    background-color: aqua;*/
+    border-bottom: 1px solid black;
+}
+#middle_nd_right > #text_1 >#select_box {
+    width: 200px;
+    height: 25px;
+    margin-top: 23px;
+}
+#middle_nd_right > #text_3  {
+    height: 345px;
+    border-bottom: 1px solid black;
+} 
+#middle_nd_right > #text_4 > a > p {
+    margin-left: 20px;
+    background-color: black;
+    width: 90px;
+    float: left;
+    margin-top: 21px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Poor Story', cursive;
+    
+}
+#cancle {
+    background-color:;
+    width:130px;
+    height:50px;
+    float:left;
+    text-align:center;
+    line-height: 50px;
+    margin-left:298px;
+    border:1px solid black;
+    border-radius:10px;
+    margin-top: 22px;
+    font-family: 'Poor Story', cursive;
+    
+}
+
+#finish {
+    background-color:black;
+    width:130px;
+    height:50px;
+    float:left;
+    text-align:center;
+    line-height: 50px;
+    margin-left:5px;
+    border:1px solid black;
+    border-radius:10px;
+    margin-top: 22px;
+    font-family: 'Poor Story', cursive;
+}
+#finish > a {
+    color:white;
+}
+#bottom{
+    width:1000px;
+    height:100px;
+    margin:20px;
+    text-align: left;
+}

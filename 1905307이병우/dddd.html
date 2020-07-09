@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+  <style>
+    /*css 초기화 시작*/
+    *{margin:0; padding:0;}
+    body{font-family:'돋움';}
+    li{list-style:none;}
+    img{border:0;}
+    /*css 초기화 끝*/
+    #main_header{ width:960px; margin:0 auto; height:160px; position:relative;}
+    #main_header > #title{position: absolute; left:20px; top:40px; font-family: 'Just Another Hand', cursive;}
+    #main_header > #main_gnb{position: absolute; right:0; top:0;}
+    #main_header > #main_lnb{position: absolute; right:0; bottom:10px;}
+    #main_gnb > ul {overflow:hidden;}
+    #main_gnb > ul > li {float:left;}
+    #main_gnb > ul > li > a {display:block; padding:2px 10px; border: 1px solid gray; color:gray; text-decoration:none;}
+    #main_gnb > ul > li > a:hover{background:gray; color: white;}
+    #main_lnb > ul {overflow:hidden;}
+    #main_lnb > ul > li {float:left;}
+    #main_lnb > ul > li > a {display:block; padding:2px 10px; border: 1px solid gray; color:gray; text-decoration:none;}
+    #main_lnb > ul > li > a:hover{background:gray; color: white;}
+    #content{width:960px; margin:0 auto; overflow:hidden;}
+    #content > #main_section{width:750px; float:left;}
+    p{font-size:12px;}
+    #content > #main_aside{width:200px; float:right;}
+    #main_section > article.main_article{margin-bottom:10px; padding:20px; border:1px solid gray;}
+    #main_footer{width:960px; margin:0 auto; margin-bottom:10px; box-sizing:border-box; padding:10px; border:1px solid gray; text-align: center;}
+    /*첫번째 탭*/
+    input:nth-of-type(1) {display: none;}
+    input:nth-of-type(1) ~ div:nth-of-type(1) {display: none;}
+    input:nth-of-type(1):checked ~ div:nth-of-type(1) {display: block;}
+    /*두번째 탭*/
+    input:nth-of-type(2) {display: none;}
+    input:nth-of-type(2) ~ div:nth-of-type(2) {display: none;}
+    input:nth-of-type(2):checked ~ div:nth-of-type(2) {display: block;}
+    section.button{overflow: hidden;}
+    section.buttons > label{display: block; float:left; width:100px;
+                            height: 30px; line-height: 30px; text-align:
+                            center; box-sizing: border-box; border: 1px solid black;
+                            background: black; color: white;}
+      input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1)
+      {background: skyblue; color: white;}
+      input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2)
+      {background: skyblue; color: white;}
+      .item{overflow: hidden; padding:10px; border: 1px solid gray;
+            border-top:none;}
+      .thumbnail{float:left;}
+      .description{float: left; margin-left: 10px;}
+img{width: 45px; height: 45px;}
+img:hover{width: 50px; height: 50px;}
+.description>strong{display: block; width:120px; /*글자 생략시에 사용*/white-space: nowrap; overflow: hidden;
+                       text-overflow: ellipsis;}
+  </style>
+</head>
+<body>
+<header id="main_header">
+  <div id="title">
+    <h1> YNC Computer </h1>
+    <h2> HTML5 + CSS3 </h2>
+  </div>
+  <!--gnb: global navigation bar-->
+  <nav id="main_gnb">
+    <ul>
+      <li><a href="#"> Web </a></li>
+      <li><a href="#"> Mobile </a></li>
+      <li><a href="#"> Game </a></li>
+      <li><a href="#"> Simulation </a></li>
+      <li><a href="#"> Data </a></li>
+    </ul>
+  </nav>
+  <!--lnb: lacal navigation bar-->
+  <nav id="main_lnb">
+    <ul>
+      <li><a href="#"> HTML5 </a></li>
+      <li><a href="#"> CSS3 </a></li>
+      <li><a href="#"> JavaScript </a></li>
+      <li><a href="#"> jQuery </a></li>
+      <li><a href="#"> node.js </a></li>
+    </ul>
+  </nav>
+</header>
+<div id="content">
+  <section id="main_section">
+    <article class="main_article">
+      <h1>메인 섹션</h1>
+      <p>What is Lorem Ipsum?
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </article>
+    <article class="main_article">
+      <h1>메인 섹션</h1>
+      <p>What is Lorem Ipsum?
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </article>
+    <article class="main_article">
+      <h1>메인 섹션</h1>
+      <p>What is Lorem Ipsum?
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </article>
+
+  </section>
+  <aside id="main_aside">
+    <input type="radio" id="first" name="tab" checked="checked">
+    <input type="radio" id="second" name="tab">
+    <section class="buttons">
+      <label for="first"> 첫번째 </label>
+      <label for="second"> 두번째 </label>
+    </section>
+    <div class="tab_item">
+      <ul>
+        <li class="item"> <a href="#">
+          <div class="thumbnail">
+            <img src="01.png" alt="">
+          </div>
+          <div class="description">
+          <strong>HTML5 Canvas</strong>
+          <p> 2019-05-17 </p>
+        </div>
+        </a>
+      </li>
+      <li class="item"> <a href="#">
+        <div class="thumbnail">
+          <img src="02.png" alt="">
+        </div>
+        <div class="description">
+        <strong>HTML5 Audio</strong>
+        <p> 2019-05-17 </p>
+      </div>
+      </a>
+    </li>
+    <li class="item"> <a href="#">
+      <div class="thumbnail">
+        <img src="03.png" alt="">
+      </div>
+      <div class="description">
+      <strong>HTML5 Video</strong>
+      <p> 2019-05-17 </p>
+    </div>
+    </a>
+  </li>
+  <li class="item"> <a href="#">
+    <div class="thumbnail">
+      <img src="04.png" alt="">
+    </div>
+    <div class="description">
+    <strong>HTML5 Semantic Web</strong>
+    <p> 2019-05-17 </p>
+  </div>
+  </a>
+</li>
+
+      </ul>
+    </div>
+    <div class="tab_item">
+      <ul>
+        <li> <a href="#"> CSS3 Transition </a></li>
+        <li> <a href="#"> CSS3 Animation </a></li>
+        <li> <a href="#"> CSS3 Border </a></li>
+        <li> <a href="#"> CSS3 Box </a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+<footer id="main_footer">
+  <h3> HTML5 + CSS3 Basic</h3>
+  <address> 대구광역시 남구 현충로 170 영남이공대학교 3층 </address>
+</footer>
+</body>
+</html>

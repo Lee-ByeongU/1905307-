@@ -1,0 +1,234 @@
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+} 
+
+body {
+    width:1000px;
+    margin:0 auto;
+    height:1000px;
+}
+
+header {
+    width:1000px;
+    height:105px;
+    margin:0 auto;
+    position: relative;
+    
+}
+
+ #main {
+     margin:0 auto;
+}
+
+ #main > a > img {
+     width:300px;
+     height:120px;
+}
+
+ #menu {
+     width: 600px;
+     margin-left:20px;
+     float: left;
+/*     margin:0 auto;*/
+     height:82px;
+/*     background:yellow;*/
+}
+
+ #menu > ul {
+     width: 600px;
+     margin: 0;
+     margin:0 auto;
+     text-align:center;
+     height:20px;
+     margin-bottom:60px;
+}
+
+ #menu > ul > li {
+     float: left;
+     width: 20%;
+     font-family: 'Jua', sans-serif;
+     
+}
+
+ #menu > ul > ul {
+     width: 100px;
+     height: 0px;
+     overflow: hidden;
+     position:absolute;
+     transition: height 300ms;
+     margin-top:25px;
+     text-align: center;
+     font-family: 'Jua', sans-serif;
+     box-sizing: border-box;
+     
+}
+
+#menu > ul > li:hover {
+    letter-spacing:5px;
+    transition: all 400ms;
+}
+
+ #menu > ul > ul:nth-of-type(1){
+     left:27px;
+     
+}
+ #menu > ul > ul:nth-of-type(2){
+     left:146px;
+}
+ #menu > ul > ul:nth-of-type(3){
+     left:268px;
+}
+ #menu > ul > ul:nth-of-type(4){
+     left:388px;
+}
+#menu > ul > ul:nth-of-type(5){
+     left:506px;
+}
+ #menu > ul > li:hover+ul, #menu > ul > ul:hover{
+     height: 70px;
+}
+#sss{
+    width: 380px;
+    height: 82px;
+/*    background:gray;*/
+    float: right;
+}
+#middle {
+    width:1000px;
+    height:795px;
+}
+#middle > #middle_st  {
+    width:148px;
+    height:795px;
+    float:left;
+/*    background-color:gray;*/
+    font-family: 'Cute Font', cursive;
+}
+#middle_st > ul > #week {
+/*    border:1px solid cadetblue;*/
+    width:148px;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+/*    background-color:cadetblue;*/
+    color: white;
+    border-radius:15px;  
+}
+#middle_st > ul > #week > a{
+    color:dodgerblue;
+    font-family: 'Cute Font', cursive;
+    font-size: 30px;
+    
+}
+#middle_st > ul > li {
+    width:148px;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+    font-family: "돋움"
+   
+}
+#middle_st > ul > li:hover {
+    text-decoration-line:underline;
+    font-weight: bold;
+}
+
+#middle > #middle_nd {
+    width:800px;
+    height:795px;
+    float:left;
+/*    background-color:red;*/
+    margin-left:50px;
+    font-family: "돋움"
+    
+    
+}
+#middle > #middle_nd > li { 
+    width:80px;
+    margin-left:20px;
+    float:left;
+    text-align: center;
+    height: 43px;
+    line-height: 45px;
+/*    background-color:gray;*/
+/*    border:0.2px solid black;*/
+    border-radius: 20px;
+    font-size:12px;
+    
+}
+#middle > #middle_nd > input {
+    float: left;
+    margin-top:13px;
+}
+#middle > #middle_nd > #text {
+    margin-left:20px;
+}
+#middle > #middle_nd > #text > #a {
+    float:left;
+    width:70px;
+    text-align: left;
+    height:40px;
+    line-height: 40px;
+    font-size:12px;
+}
+
+
+#middle_nd > #b_1 {
+    float:left;
+/*    background-color:gray;*/
+    width: 590px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#middle_nd > #b_1:hover {
+    text-decoration-line:underline;
+    font-weight: bold;
+}
+#middle_nd > #sing {
+    margin-left: 740px;
+    font-family: 'Jua', sans-serif;
+}
+#sing:hover {
+    text-decoration-line:underline;
+    font-weight: bold;
+}
+#middle_nd > #b_2 {
+    float:left;
+/*    background-color:red;*/
+    width: 30px;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#middle_nd > #b_3 {
+    float:left;
+/*    background-color:yellow;*/
+    width: 70px;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#middle_nd > #b_4 {
+    float:left;
+/*    background-color:green;*/
+    margin-left: px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#middle_nd > #number {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+#bottom{
+    width:1000px;
+    height:100px;
+    margin:20px;
+    text-align: left;
+}
